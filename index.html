@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" date-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pós em Inovações Estéticas e Procedimentos Injetáveis</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-list@3.0.0/css/bulma-list.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script defer src="https://kit.fontawesome.com/f3579f44cb.js"></script>
+  </head>
+
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="is-flex is-justify-content-center mb-7">
+          <figure class="image">
+            <img src="./assets/img/logo-1.png" style="width: 100px" />
+          </figure>
+        </div>
+
+        <div class="has-text-centered">
+          <h1 class="title is-4 mb-2">
+            Pós em Inovações Estéticas e Procedimentos Injetáveis
+          </h1>
+          <p class="subtitle is-6 is-uppercase mb-5">
+            FAINOR • Vitória da Conquista, Bahia
+          </p>
+        </div>
+
+        <div class="is-flex is-flex-direction-row is-gap-4 mb-7">
+          <template x-for="demo in demos" x-data="getDemos">
+            <figure class="image is-96x96">
+              <img class="is-rounded is-zoomable" :src="demo" />
+            </figure>
+          </template>
+        </div>
+
+        <div class="has-text-centered">
+          <a
+            class="button is-primary is-medium is-radiusless is-zoomable px-6 py-4 mb-3"
+            href="https://wa.me/5577988122481?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20P%C3%B3s%20em%20Inova%C3%A7%C3%B5es%20Est%C3%A9ticas%20e%20Procedimentos%20Injet%C3%A1veis"
+            target="_blank"
+          >
+            <span class="is-uppercase">Ingressar na turma</span>
+            <span class="icon">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <p class="is-size-7">
+            Ao clicar, você será direcionado ao WhatsApp da coordenação
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="has-text-centered">
+          <h2 class="title is-4 mb-2">Estrutura Curricular</h2>
+          <p class="subtitle is-7 is-uppercase mb-5">
+            Totalizando <b>360 Horas</b> de Carga Horária
+          </p>
+        </div>
+
+        <div class="list">
+          <template x-for="module in modules" x-data="getModules">
+            <div class="list-item is-zoomable">
+              <div class="list-item-title">
+                <div
+                  class="is-size-7 is-flex is-align-items-center has-text-dark"
+                >
+                  <i class="fas fa-book mr-2"></i>
+                  <span x-text="module"></span>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="has-text-centered mb-6">
+          <h2 class="title is-4 mb-2">Coordenação</h2>
+        </div>
+
+        <template
+          x-for="(coordinator, index) in coordinators"
+          x-data="getCoordinators"
+        >
+          <div
+            class="columns is-vcentered"
+            :class="{ 'mb-6': index !== coordinators.length - 1 }"
+          >
+            <div class="column is-2">
+              <figure class="image is-max-152x152">
+                <img class="is-rounded is-zoomable" :src="coordinator.image" />
+              </figure>
+            </div>
+            <div class="column">
+              <h3
+                class="title is-5 has-text-weight-semibold mb-2"
+                x-text="coordinator.name"
+              ></h3>
+              <p x-text="coordinator.description"></p>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="has-text-centered">
+          <h2 class="title is-4 mb-2">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="list mb-7">
+          <template x-for="faq in faqs" x-data="getFaqs">
+            <div class="list-item">
+              <div class="list-item-content">
+                <div class="list-item-title mb-1">
+                  <div
+                    class="is-size-7 is-flex is-align-items-center has-text-black"
+                  >
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span x-text="faq.question"></span>
+                  </div>
+                </div>
+                <div class="list-item-description">
+                  <p class="is-size-7 has-text-dark" x-text="faq.answer"></p>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <div class="has-text-centered mb-7">
+          <p class="is-size-6 mb-3">Se interessou? Entre em contato conosco!</p>
+
+          <a
+            class="button is-link is-medium is-radiusless is-zoomable px-6 py-4 mb-3"
+            href="https://wa.me/5577988122481?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20P%C3%B3s%20em%20Inova%C3%A7%C3%B5es%20Est%C3%A9ticas%20e%20Procedimentos%20Injet%C3%A1veis"
+            target="_blank"
+          >
+            <span class="is-uppercase">Ingressar na turma</span>
+            <span class="icon">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <p class="is-size-7">
+            Ao clicar, você será direcionado ao WhatsApp da coordenação
+          </p>
+        </div>
+
+        <div class="is-flex is-align-items-center is-justify-content-center">
+          <figure class="image">
+            <img src="./assets/img/logo-2.png" style="width: 150px" />
+          </figure>
+
+          <div
+            class="ml-4 is-flex is-flex-direction-column is-justify-content-center"
+          >
+            <a
+              class="has-text-primary mb-2"
+              href="https://instagram.com/posgraduacaoecursos/"
+              target="_blank"
+            >
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span>@posgraduacaoecursos</span>
+              </span>
+            </a>
+
+            <a
+              class="is-size-6 has-text-primary"
+              href="https://wa.me/5577988122481"
+              target="_blank"
+            >
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fab fa-whatsapp"></i>
+                </span>
+                <span>(77) 98812-2481</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
