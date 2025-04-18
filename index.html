@@ -6,24 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leão e Rocha</title>
     <link rel="icon" href="./assets/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma-list@3.0.0/css/bulma-list.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="./assets/vendor/bulma.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/bulma-list.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script defer src="https://kit.fontawesome.com/f3579f44cb.js"></script>
+    <script defer src="./assets/vendor/alpine.min.js"></script>
+    <script defer src="./assets/vendor/fontawesome.min.js"></script>
   </head>
 
   <body>
@@ -49,12 +37,15 @@
         </div>
 
         <div class="is-flex is-flex-direction-row is-gap-4 mb-7">
-          <template x-for="(demo, index) in demos" x-data="getDemos">
+          <template x-for="(demo, index) in demos" x-data="demos">
             <figure
               class="image is-96x96 animate__animated animate__fadeInUp"
               :class="`animate__delay-${250 * (index + 1)}ms`"
             >
-              <img class="is-rounded is-zoomable" :src="demo" />
+              <img
+                class="is-rounded is-zoomable"
+                :src="`./assets/img/${demo.image}`"
+              />
             </figure>
           </template>
         </div>
@@ -90,14 +81,14 @@
         </div>
 
         <div class="list">
-          <template x-for="module in modules" x-data="getModules">
+          <template x-for="module in modules" x-data="modules">
             <div class="list-item is-zoomable">
               <div class="list-item-title">
                 <div
                   class="is-size-7 is-flex is-align-items-center has-text-dark"
                 >
                   <i class="fas fa-book mr-2"></i>
-                  <span x-text="module"></span>
+                  <span x-text="module.title"></span>
                 </div>
               </div>
             </div>
@@ -114,7 +105,7 @@
 
         <template
           x-for="(coordinator, index) in coordinators"
-          x-data="getCoordinators"
+          x-data="coordinators"
         >
           <div
             class="columns is-vcentered"
@@ -122,7 +113,10 @@
           >
             <div class="column is-2">
               <figure class="image is-max-152x152">
-                <img class="is-rounded is-zoomable" :src="coordinator.image" />
+                <img
+                  class="is-rounded is-zoomable"
+                  :src="`./assets/img/${coordinator.image}`"
+                />
               </figure>
             </div>
             <div class="column">
@@ -144,14 +138,14 @@
         </div>
 
         <div class="list mb-7">
-          <template x-for="faq in faqs" x-data="getFaqs">
+          <template x-for="faq in faqs" x-data="faqs">
             <div class="list-item is-zoomable">
               <div class="list-item-content">
                 <div class="list-item-title mb-1">
                   <div
                     class="is-size-7 is-flex is-align-items-center has-text-black"
                   >
-                    <i class="fas fa-question-circle mr-2"></i>
+                    <i class="fas fa-circle-question mr-2"></i>
                     <span x-text="faq.question"></span>
                   </div>
                 </div>
@@ -188,33 +182,18 @@
           </figure>
 
           <div
-            class="ml-4 is-flex is-flex-direction-column is-justify-content-center"
+            class="ml-4 is-flex is-flex-direction-column is-row-gap-1 is-justify-content-center"
           >
-            <a
-              class="has-text-primary mb-2"
-              href="https://instagram.com/posgraduacaoecursos/"
-              target="_blank"
-            >
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fab fa-instagram"></i>
+            <template x-for="platform in platforms" x-data="platforms">
+              <a class="has-text-primary" :href="platform.url" target="_blank">
+                <span class="icon-text">
+                  <span class="icon">
+                    <i :class="platform.icon"></i>
+                  </span>
+                  <span x-text="platform.label"></span>
                 </span>
-                <span>@posgraduacaoecursos</span>
-              </span>
-            </a>
-
-            <a
-              class="is-size-6 has-text-primary"
-              href="https://wa.me/5577988122481"
-              target="_blank"
-            >
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fab fa-whatsapp"></i>
-                </span>
-                <span>(77) 98812-2481</span>
-              </span>
-            </a>
+              </a>
+            </template>
           </div>
         </div>
       </div>
