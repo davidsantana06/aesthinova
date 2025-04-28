@@ -9,22 +9,15 @@
   --bulma-link-l: 57%;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100svh;
+.hero.is-fullheight {
+  min-height: 100svh !important;
 }
 
-.hero-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.is-max-width-1024 {
   max-width: 1024px;
 }
 
-.image.is-max-152x152 {
+.is-max-152x152 {
   max-width: 152px;
   max-height: 152px;
 }

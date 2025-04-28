@@ -15,8 +15,10 @@
   </head>
 
   <body>
-    <section class="hero">
-      <div class="hero-body">
+    <section class="hero is-fullheight">
+      <div
+        class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
+      >
         <div class="is-flex is-justify-content-center mb-7">
           <figure class="image">
             <img src="./assets/img/logo-1.png" style="width: 100px" />
@@ -53,7 +55,7 @@
         <div class="has-text-centered">
           <a
             class="button is-primary is-medium is-radiusless px-6 py-4 mb-3 animate__animated animate__bounceIn animate__delay-750ms"
-            href="https://wa.me/5577988122481?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20P%C3%B3s%20em%20Inova%C3%A7%C3%B5es%20Est%C3%A9ticas%20e%20Procedimentos%20Injet%C3%A1veis"
+            href="https://wa.me/5577988122481?text=Olá! Quero ingressar na turma de Pós em Inovações Estéticas e Procedimentos Injetáveis"
             target="_blank"
           >
             <span class="is-uppercase">Ingressar na turma</span>
@@ -71,8 +73,10 @@
       </div>
     </section>
 
-    <section class="hero is-light">
-      <div class="hero-body">
+    <section class="hero is-light is-fullheight">
+      <div
+        class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
+      >
         <div class="has-text-centered mb-5">
           <h2 class="title is-4 mb-2">Estrutura Curricular</h2>
           <p class="subtitle is-7 is-uppercase">
@@ -97,8 +101,10 @@
       </div>
     </section>
 
-    <section class="hero">
-      <div class="hero-body">
+    <section class="hero is-fullheight">
+      <div
+        class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
+      >
         <div class="has-text-centered mb-6">
           <h2 class="title is-4">Coordenação</h2>
         </div>
@@ -108,7 +114,7 @@
           x-data="coordinators"
         >
           <div
-            class="columns is-vcentered"
+            class="columns is-vcentered is-max-width-1024"
             :class="{ 'mb-6': index !== coordinators.length - 1 }"
           >
             <div class="column is-2">
@@ -131,13 +137,15 @@
       </div>
     </section>
 
-    <section class="hero is-light">
-      <div class="hero-body">
+    <section class="hero is-light is-fullheight">
+      <div
+        class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
+      >
         <div class="has-text-centered mb-5">
           <h2 class="title is-4">Perguntas Frequentes</h2>
         </div>
 
-        <div class="list mb-7">
+        <div class="list is-max-width-1024 mb-7">
           <template x-for="faq in faqs" x-data="faqs">
             <div class="list-item is-zoomable">
               <div class="list-item-content">
@@ -162,7 +170,7 @@
 
           <a
             class="button is-link is-medium is-radiusless px-6 py-4 mb-3"
-            href="https://wa.me/5577988122481?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20P%C3%B3s%20em%20Inova%C3%A7%C3%B5es%20Est%C3%A9ticas%20e%20Procedimentos%20Injet%C3%A1veis"
+            href="https://wa.me/5577988122481?text=Olá! Quero ingressar na turma de Pós em Inovações Estéticas e Procedimentos Injetáveis"
             target="_blank"
           >
             <span class="is-uppercase">Ingressar na turma</span>
