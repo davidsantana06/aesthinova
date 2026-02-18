@@ -6,49 +6,44 @@ const demos = [
 
 const modules = [
   {
-    title:
-      "Legislação dos Procedimentos Injetáveis no Brasil e Regulamentação Sanitária",
+    title: "Legislação e Regulamentação Sanitária em Procedimentos Injetáveis",
+  },
+  {
+    title: "Anatomia, Fisiologia do Sistema Tegumentar e Reparação Tecidual",
+  },
+  {
+    title: "Prevenção e Manejo de Intercorrências",
+  },
+  {
+    title: "Harmonização Facial, Corporal e Visagismo",
+  },
+  {
+    title: "PEIM – Procedimento Estético Injetável para Microvasos",
+  },
+  {
+    title: "Ultrassom Microfocado",
+  },
+  {
+    title: "Toxina Botulínica – Full Face",
+  },
+  {
+    title: "Epilação a LED",
   },
   {
     title:
-      "Anatomia e Fisiologia do Sistema Tegumentar • Reparação Tecidual • Prevenção de Intercorrências",
+      "Intradermoterapia Facial, Corporal e Capilar e Skinbooster",
   },
   {
-    title:
-      "Harmonização Facial e Corporal, Visagismo Aplicado e Métodos de Avaliação",
+    title: "Bioestimuladores e Fios lisos e Espiculados",
   },
   {
-    title: "Procedimento Estético Injetável I • PEIM",
+    title: "Harmonização Glútea",
   },
   {
-    title: "Procedimento Estético Injetável II • Bioestimuladores e Fios",
+    title: "Preenchedores",
   },
   {
-    title: "Procedimento Estético Injetável III",
-  },
-  {
-    title: "Botox",
-  },
-  {
-    title:
-      "Inovações Tecnológicas em Estética I • Ultrassom Microfocado e Ozonioterapia",
-  },
-  {
-    title: "Inovações Tecnológicas em Estética II • Epilação a LED",
-  },
-  {
-    title:
-      "Procedimento Estético Injetável IV • Intradermoterapia Facial, Corporal e Capilar • Skinbooster",
-  },
-  {
-    title:
-      "Inovações Tecnológicas em Estética III • Remoção de Tatuagem, Micropigmentação e Ativos Colorimétricos",
-  },
-  {
-    title: "Procedimento Estético Injetável V • Harmonização Glútea",
-  },
-  {
-    title: "Inovações Tecnológicas em Estética IV • Preenchedores",
+    title: "Prática Supervisionada",
   },
 ];
 
