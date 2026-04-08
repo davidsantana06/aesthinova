@@ -1,3 +1,6 @@
+const WHATSAPP_CONTACT_URL =
+  "https://wa.me/5577988122481?text=Olá! Quero ingressar na turma de Injetáveis Aplicados a Harmonização Facial e Corporal";
+
 const demos = [
   { image: "demo-1.png" },
   { image: "demo-2.png" },
@@ -30,8 +33,7 @@ const modules = [
     title: "Epilação a LED",
   },
   {
-    title:
-      "Intradermoterapia Facial, Corporal e Capilar e Skinbooster",
+    title: "Intradermoterapia Facial, Corporal e Capilar e Skinbooster",
   },
   {
     title: "Bioestimuladores e Fios lisos e Espiculados",

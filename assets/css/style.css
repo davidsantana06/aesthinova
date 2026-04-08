@@ -13,6 +13,10 @@
   min-height: 100svh !important;
 }
 
+.is-max-width-100 {
+  max-width: 100px;
+}
+
 .is-max-width-1024 {
   max-width: 1024px;
 }
@@ -52,4 +56,8 @@
 
 .ca__u-delay1250 {
   animation-delay: 1250ms;
+}
+
+.ca__u-delay1500 {
+  animation-delay: 1500ms;
 }

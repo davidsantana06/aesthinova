@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR" data-theme="dark">
   <head>
@@ -16,13 +16,13 @@
   </head>
 
   <body>
-    <section class="hero is-fullheight">
+    <main id="home" class="hero is-fullheight">
       <div
         class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
       >
         <div class="is-flex is-justify-content-center mb-7">
           <figure class="image">
-            <img src="./assets/img/logo-1.png" style="width: 100px" />
+            <img class="is-max-width-100" src="./assets/img/logo-1.png" />
           </figure>
         </div>
 
@@ -42,7 +42,7 @@
         <div class="is-flex is-flex-direction-row is-gap-4 mb-7">
           <template x-for="(demo, index) in demos" x-data="demos">
             <figure
-              class="image is-96x96 cssanimation ca__fx-fadeInBottom"
+              class="image is-max-width-100 cssanimation ca__fx-fadeInBottom"
               :class="`ca__u-delay${250 * (index + 1)}`"
             >
               <img
@@ -56,8 +56,9 @@
         <div class="has-text-centered">
           <a
             class="button is-primary is-medium is-radiusless px-6 py-4 mb-3 cssanimation ca__fx-snapZoom ca__u-delay750"
-            href="https://wa.me/5577988122481?text=Olá! Quero ingressar na turma de Injetáveis Aplicados a Harmonização Facial e Corporal"
+            :href="whatsappContactUrl"
             target="_blank"
+            x-data="{ whatsappContactUrl: WHATSAPP_CONTACT_URL }"
           >
             <span class="is-uppercase">Ingressar na turma</span>
             <span class="icon">
@@ -70,9 +71,21 @@
           </p>
         </div>
       </div>
-    </section>
+      <div class="hero-foot py-4">
+        <div class="is-flex is-justify-content-center">
+          <a
+            class="icon is-large cssanimation ca__fx-fadeInBottom ca__u-delay1500"
+            href="#course-structure"
+          >
+            <i
+              class="fas fa-circle-down fa-lg cssanimation ca__fx-levitate"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </main>
 
-    <section class="hero is-light is-fullheight">
+    <section id="course-structure" class="hero is-light is-fullheight">
       <div
         class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
       >
@@ -85,7 +98,7 @@
 
         <div class="list">
           <template x-for="module in modules" x-data="modules">
-            <div class="list-item is-zoomable">
+            <div class="list-item">
               <div class="list-item-title">
                 <div
                   class="is-size-7 is-flex is-align-items-center has-text-dark"
@@ -100,7 +113,7 @@
       </div>
     </section>
 
-    <section class="hero is-fullheight">
+    <section id="coordination" class="hero is-fullheight">
       <div
         class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
       >
@@ -136,7 +149,7 @@
       </div>
     </section>
 
-    <section class="hero is-light is-fullheight">
+    <section id="faqs" class="hero is-light is-fullheight">
       <div
         class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
       >
@@ -146,7 +159,7 @@
 
         <div class="list is-max-width-1024 mb-7">
           <template x-for="faq in faqs" x-data="faqs">
-            <div class="list-item is-zoomable">
+            <div class="list-item">
               <div class="list-item-content">
                 <div class="list-item-title mb-1">
                   <div
@@ -169,8 +182,9 @@
 
           <a
             class="button is-link is-medium is-radiusless px-6 py-4 mb-3"
-            href="https://wa.me/5577988122481?text=Olá! Quero ingressar na turma de Injetáveis Aplicados a Harmonização Facial e Corporal"
+            :href="whatsappContactUrl"
             target="_blank"
+            x-data="{ whatsappContactUrl: WHATSAPP_CONTACT_URL }"
           >
             <span class="is-uppercase">Ingressar na turma</span>
             <span class="icon">
