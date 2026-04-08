@@ -9,8 +9,15 @@
   --bulma-link-l: 57%;
 }
 
-.hero.is-fullheight {
-  min-height: 100svh !important;
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+}
+
+main,
+section {
+  scroll-snap-align: start;
 }
 
 .is-max-width-100 {
@@ -31,11 +38,11 @@
 }
 
 .is-zoomable {
-  transition: transform 0.2s ease !important;
+  transition: transform 0.1s ease !important;
 }
 
 .is-zoomable:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .mb-7 {
