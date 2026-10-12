@@ -145,3 +145,7 @@ const platforms = [
     url: "https://wa.me/5577988042905",
   },
 ];
+
+document.addEventListener("alpine:initialized", () =>
+  document.documentElement.classList.add("is-ready"),
+);

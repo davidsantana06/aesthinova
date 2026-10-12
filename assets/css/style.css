@@ -76,6 +76,14 @@ section {
   margin-bottom: 4.5rem;
 }
 
+.js .cssanimation {
+  animation-play-state: paused;
+}
+
+.js.is-ready .cssanimation {
+  animation-play-state: running;
+}
+
 .ca__u-delay250 {
   animation-delay: 250ms;
 }
