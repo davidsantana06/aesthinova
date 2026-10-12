@@ -45,6 +45,18 @@ section {
   transform: scale(1.025);
 }
 
+.list.has-hoverable-list-items {
+  --be-list-item-hover-color: color-mix(in srgb, var(--bulma-primary) 8%, transparent);
+}
+
+.list.has-hoverable-list-items .list-item {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list.has-hoverable-list-items .list-item:hover {
+  box-shadow: inset 3px 0 0 var(--bulma-primary);
+}
+
 .mb-7 {
   margin-bottom: 4.5rem;
 }
