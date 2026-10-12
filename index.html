@@ -22,7 +22,14 @@
       >
         <div class="is-flex is-justify-content-center mb-7">
           <figure class="image">
-            <img class="is-max-width-100" src="./assets/img/logo-1.png" />
+            <img
+              class="is-max-width-100"
+              src="./assets/img/logo-1.png"
+              width="239"
+              height="214"
+              fetchpriority="high"
+              decoding="async"
+            />
           </figure>
         </div>
 
@@ -48,6 +55,9 @@
               <img
                 class="is-rounded is-zoomable"
                 :src="`./assets/img/${demo.image}`"
+                width="256"
+                height="256"
+                decoding="async"
               />
             </figure>
           </template>
@@ -134,6 +144,10 @@
                 <img
                   class="is-rounded is-zoomable"
                   :src="`./assets/img/${coordinator.image}`"
+                  width="500"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
                 />
               </figure>
             </div>
@@ -199,7 +213,14 @@
 
         <div class="is-flex is-align-items-center is-justify-content-center">
           <figure class="image">
-            <img src="./assets/img/logo-2.png" style="width: 150px" />
+            <img
+              src="./assets/img/logo-2.png"
+              style="width: 150px"
+              width="512"
+              height="160"
+              loading="lazy"
+              decoding="async"
+            />
           </figure>
 
           <div
