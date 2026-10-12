@@ -35,6 +35,23 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+.icon-svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
+.icon-svg.is-narrow {
+  width: 0.875em;
+}
+
+.icon-svg.is-large {
+  font-size: 1.25em;
+  vertical-align: -0.2em;
+}
+
 .is-zoomable {
   transition: transform 0.1s ease !important;
 }

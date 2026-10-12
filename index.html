@@ -18,10 +18,30 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script defer src="./assets/js/script.js"></script>
     <script defer src="./assets/vendor/alpine.min.js"></script>
-    <script defer src="./assets/vendor/fontawesome.min.js"></script>
   </head>
 
   <body>
+    <svg aria-hidden="true" style="display: none">
+      <symbol id="icon-arrow-right" viewBox="0 0 448 512">
+        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+      </symbol>
+      <symbol id="icon-circle-down" viewBox="0 0 512 512">
+        <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM244.7 395.3l-112-112c-4.6-4.6-5.9-11.5-3.5-17.4s8.3-9.9 14.8-9.9l64 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 64 0c6.5 0 12.3 3.9 14.8 9.9s1.1 12.9-3.5 17.4l-112 112c-6.2 6.2-16.4 6.2-22.6 0z" />
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 448 512">
+        <path d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+      </symbol>
+      <symbol id="icon-circle-question" viewBox="0 0 512 512">
+        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 448 512">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+      </symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 448 512">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+      </symbol>
+    </svg>
+
     <main id="home" class="hero is-fullheight">
       <div
         class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
@@ -78,7 +98,9 @@
           >
             <span class="is-uppercase">Ingressar na turma</span>
             <span class="icon">
-              <i class="fas fa-arrow-right"></i>
+              <svg class="icon-svg is-narrow" aria-hidden="true">
+                <use href="#icon-arrow-right"></use>
+              </svg>
             </span>
           </a>
 
@@ -93,9 +115,12 @@
             class="icon is-large cssanimation ca__fx-fadeInBottom ca__u-delay1500"
             href="#course-structure"
           >
-            <i
-              class="fas fa-circle-down fa-lg cssanimation ca__fx-levitate"
-            ></i>
+            <svg
+              class="icon-svg is-large cssanimation ca__fx-levitate"
+              aria-hidden="true"
+            >
+              <use href="#icon-circle-down"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -119,7 +144,9 @@
                 <div
                   class="is-size-7 is-flex is-align-items-center has-text-dark"
                 >
-                  <i class="fas fa-book mr-2"></i>
+                  <svg class="icon-svg is-narrow mr-2" aria-hidden="true">
+                    <use href="#icon-book"></use>
+                  </svg>
                   <span x-text="module.title"></span>
                 </div>
               </div>
@@ -185,7 +212,9 @@
                   <div
                     class="is-size-7 is-flex is-align-items-center has-text-black"
                   >
-                    <i class="fas fa-circle-question mr-2"></i>
+                    <svg class="icon-svg mr-2" aria-hidden="true">
+                      <use href="#icon-circle-question"></use>
+                    </svg>
                     <span x-text="faq.question"></span>
                   </div>
                 </div>
@@ -208,7 +237,9 @@
           >
             <span class="is-uppercase">Ingressar na turma</span>
             <span class="icon">
-              <i class="fas fa-arrow-right"></i>
+              <svg class="icon-svg is-narrow" aria-hidden="true">
+                <use href="#icon-arrow-right"></use>
+              </svg>
             </span>
           </a>
 
@@ -236,7 +267,9 @@
               <a class="has-text-primary" :href="platform.url" target="_blank">
                 <span class="icon-text">
                   <span class="icon">
-                    <i :class="platform.icon"></i>
+                    <svg class="icon-svg is-narrow" aria-hidden="true">
+                      <use :href="`#icon-${platform.icon}`"></use>
+                    </svg>
                   </span>
                   <span x-text="platform.label"></span>
                 </span>

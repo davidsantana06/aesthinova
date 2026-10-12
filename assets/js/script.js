@@ -130,17 +130,17 @@ const faqs = [
 
 const platforms = [
   {
-    icon: "fab fa-instagram",
+    icon: "instagram",
     label: "@posgraduacaoecursos",
     url: "https://www.instagram.com/posgraduacaoecursos/",
   },
   {
-    icon: "fab fa-whatsapp",
+    icon: "whatsapp",
     label: "(77) 98812-2481",
     url: "https://wa.me/5577988122481",
   },
   {
-    icon: "fab fa-whatsapp",
+    icon: "whatsapp",
     label: "(77) 98804-2905",
     url: "https://wa.me/5577988042905",
   },
