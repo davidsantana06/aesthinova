@@ -103,3 +103,9 @@ section {
 .ca__u-delay1500 {
   animation-delay: 1500ms;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
